@@ -36,12 +36,6 @@ import (
 )
 
 func main() {
-	if err := run(); err != nil {
-		fmt.Fprintf(os.Stderr, "%v", err)
-	}
-}
-
-func run() error {
 	l, err := newLoader()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "%v", err)
