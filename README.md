@@ -18,10 +18,10 @@ doesn't receive any parameters and returns an error.
 
 ## Limitations:
 
-This only works on Linux.
-We poll regularly the plugins directory instead of using fsnotify.
-We recompile every time, even if the code has not changed.
-This causes a continuously growing memory requirement (memory leak?).
+- This only works on Linux.
+- We poll regularly the plugins directory instead of using fsnotify.
+- We recompile every time, even if the code has not changed.
+- This causes a continuously growing memory requirement (memory leak?).
 
 ### Disclaimer
 
