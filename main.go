@@ -104,7 +104,7 @@ func (l *loader) compile(name string) (string, error) {
 
 	name = fmt.Sprintf("%d.go", rand.Int())
 	srcPath := filepath.Join(l.objectsDir, name)
-	if err := ioutil.WriteFile(srcPath, f, 0x666); err != nil {
+	if err := ioutil.WriteFile(srcPath, f, 0666); err != nil {
 		return "", fmt.Errorf("could not write %s: %v", name, err)
 	}
 
